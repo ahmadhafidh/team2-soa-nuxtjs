@@ -3,7 +3,7 @@
     <b-row>
       <b-col md="12">
         <b-card class="shadow-md border-0 rounded-lg">
-          <h5>DATA POSTS</h5>
+          <h5>DATA</h5>
           <hr>
           <b-button :to="{name: 'post-create'}" variant="primary" class="mb-3">TAMBAH</b-button>
           <b-table striped bordered hover :items="posts" :fields="fields" show-empty>
@@ -25,7 +25,7 @@
     data() {
       return {
         //header table  
-        fields: ['title', 'content', 'actions'],
+        fields: ['nama_depan', 'nama_belakang','email', 'actions'],
         //posts data
         posts: [],
       }
